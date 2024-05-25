@@ -91,6 +91,8 @@ def lambda_handler(event, context):
     table = None # <-- Write code to update the value of this variable.
     # ===================================================================================
 
+    dynamodb = boto3.resource('dynamodb')
+    table = dynamodb.Table(2401FTDE-KUNGUZ-streaming-dynamodb)
 
     # Retrieve ticker data from the DynamoDB table
     fe = Attr('TickerName').contains(TICKER);
