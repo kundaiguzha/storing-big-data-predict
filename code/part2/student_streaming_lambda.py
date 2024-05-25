@@ -32,7 +32,7 @@ def get_current_time(second_delta):
         datetime.datetime: Current time with delta time applied.
     """
     now = datetime.now()
-    current_delta_time = None
+    current_delta_time = now + timedelta(seconds=second_delta)
 
     # ===================== STUDENT INPUT REQUIRED ======================================
     # Complete this function as part of Step 3 in order to produce a datetime result that 
