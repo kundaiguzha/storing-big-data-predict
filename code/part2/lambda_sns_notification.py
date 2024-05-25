@@ -18,11 +18,11 @@ import json
 # Insert your SNS topic ARN below
 sns_arn = "arn:aws:sns:your:topic:here" 
 # Insert your full name and surname for marking purposes
-student_name = "Dora Explorer" 
+student_name = "Kundai Guzha" 
 # ===================================================================================
 
 def lambda_handler(event, context):
     client = boto3.client("sns")
-    resp = client.publish(TargetArn=sns_arn, 
+    resp = client.publish(TargetArn=arn:aws:sns:eu-west-1:445492270995:2401FTDEKUNGUZ-streaming-sns-topic, 
                           Message=json.dumps(event),
                           Subject=f"Failure: {student_name}, could not generate stream")
